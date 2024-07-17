@@ -37,8 +37,9 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          path: '.'
-          folder: public 
+          branch: master  # target branch where GitHub Pages will be deployed
+          folder: public   # folder containing your built HTML files
+          clean: true
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
