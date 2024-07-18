@@ -37,6 +37,8 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: .
+      - name: Install Dependencies
+        run: npm install # adjust for npm or yarn as needed
       - name: Build
         run: npm run build # adjust build command as per your project setup
       - name: Deploy to GitHub Pages
