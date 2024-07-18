@@ -45,9 +45,8 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
         with:
-          github_token: ${{ secrets.ONKAR_PROFILE_SECRET }}
-          publish_dir: ./build
-          clean: true
+          token: ${{ secrets.ONKAR_PROFILE_SECRET }}
+          artifact_name: build  # adjust based on your artifact name
       # - name: Deploy to GitHub Pages
       #   id: deployment
       #   uses: peaceiris/actions-gh-pages@v3
