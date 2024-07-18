@@ -37,10 +37,13 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: .
+      - name: Build
+        run: npm run build # adjust build command as per your project setup
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
         with:
           # Upload entire repository
+          artifact_name: ./build
           publish_dir: ./build
           clean: true
