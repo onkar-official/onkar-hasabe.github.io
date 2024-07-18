@@ -41,6 +41,11 @@ jobs:
         run: npm install # adjust for npm or yarn as needed
       - name: Build
         run: npm run build # adjust build command as per your project setup
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: build  # Name of the artifact
+          path: ./build  # Path to the directory containing your built files
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
