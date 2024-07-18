@@ -46,10 +46,7 @@ jobs:
         with:
           name: build # Name of the artifact
           path: ./build # Path to the directory containing your built files
-          timeout: 600000
-          error_count: 10
-          reporting_interval: 5000
-          preview: false
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
