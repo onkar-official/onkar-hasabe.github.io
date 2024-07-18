@@ -41,16 +41,16 @@ jobs:
         run: npm install # adjust for npm or yarn as needed
       - name: Build
         run: npm run build # adjust build command as per your project setup
-      # - name: Deploy to GitHub Pages
-      #   id: deployment
-      #   uses: actions/deploy-pages@v4
-      #   with:
-      #     # Upload entire repository
-      #     publish_dir: ./build
-      #     clean: true
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: peaceiris/actions-gh-pages@v3
+        uses: actions/deploy-pages@v4
         with:
           github_token: ${{ secrets.ONKAR_PROFILE_SECRET }}
           publish_dir: ./build
+          clean: true
+      # - name: Deploy to GitHub Pages
+      #   id: deployment
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     github_token: ${{ secrets.ONKAR_PROFILE_SECRET }}
+      #     publish_dir: ./build
