@@ -42,5 +42,5 @@ jobs:
         uses: actions/deploy-pages@v4
         with:
           # Upload entire repository
-          publish_dir: ./public
+          publish_dir: ./build
           clean: true
