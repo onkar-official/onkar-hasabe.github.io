@@ -9,10 +9,10 @@ const introdata = {
     animated: {
         first: "I love coding",
         second: "I code cool websites",
-        third: "I develop mobile apps",
+        third: "I develop web application",
     },
     description: `Hello there! I'm Onkar Hasabe, a passionate Full-Stack Developer with extensive experience in crafting web applications using ReactJS, Node.js, and AWS services. With a keen eye for detail and a commitment to delivering robust, scalable solutions, I thrive in dynamic environments where innovation meets practicality.
-    Throughout my career, I've had the privilege of working on diverse projects that have sharpened my skills in front-end development, back-end architecture, and cloud infrastructure deployment. I believe in leveraging cutting-edge technologies to create seamless user experiences and optimize backend processes.
+    Throughout my career, I've had the privilege of working on diverse projects that have sharpened my skills in front-end development, back-end architecture, and cloud infrastructure deployment.
     Feel free to explore my portfolio to discover some of my recent projects and get a glimpse into how I approach development challenges. I'm always eager to collaborate on exciting new ventures and contribute to projects that push the boundaries of what's possible in web development.`,
     your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
 };
